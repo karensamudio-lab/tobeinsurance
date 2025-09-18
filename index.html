@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="To Be Insurance Services - Seguros de salud, vida, gastos finales e IUL en Estados Unidos. Cotiza gratis con Karen Samudio, agente de seguros licenciada.">
+  <title>To Be Insurance Services | Seguros en Estados Unidos</title>
+  <!-- Íconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #0c3c60;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background-color: #0c3c60;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #0c3c60;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #14507d;
+      color: #fff;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    form input, form select, form button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #0c3c60;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #14507d;
+    }
+    footer {
+      background: #0c3c60;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    /* Botón flotante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      border-radius: 50%;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+    }
+    .whatsapp-float img {
+      width: 35px;
+      height: 35px;
+    }
+    .whatsapp-float:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="To Be Insurance Services">
+    <nav>
+      <a href="#about">Sobre mí</a>
+      <a href="#services">Servicios</a>
+      <a href="#form">Cotización</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Protege tu futuro con To Be Insurance Services</h1>
+    <p>Seguros de salud, vida, gastos finales e IUL en todo Estados Unidos</p>
+    <a href="#form" class="btn">Cotiza Gratis</a>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="about">
+    <h2>Sobre Mí</h2>
+    <p>Soy <strong>Karen Samudio</strong>, agente de seguros con más de 4 años de experiencia. Tengo licencia para operar en la mayoría de los estados de Estados Unidos. Mi objetivo es ayudarte a elegir la mejor protección para tu salud, tu vida y tu futuro financiero.</p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="services">
+    <h2>Productos y Servicios</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Seguros de Salud</h3>
+        <p>Planes a través de Obamacare y seguros privados con opciones accesibles para ti y tu familia.</p>
+      </div>
+      <div class="service">
+        <h3>Seguro de Vida a Término</h3>
+        <p>Cobertura económica y flexible durante los años de mayores responsabilidades.</p>
+      </div>
+      <div class="service">
+        <h3>Seguro de Vida Entera</h3>
+        <p>Protección permanente con acumulación de valor en efectivo.</p>
+      </div>
+      <div class="service">
+        <h3>Gastos Finales</h3>
+        <p>Planes diseñados para cubrir servicios funerarios sin dejar cargas a tus seres queridos.</p>
+      </div>
+      <div class="service">
+        <h3>IUL (Index Universal Life)</h3>
+        <p>Seguro con protección de vida y ahorro para tu jubilación.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario -->
+  <section id="form">
+    <h2>Solicita tu Cotización</h2>
+    <form action="https://wa.me/13055180208" method="GET" target="_blank">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
+      <input type="tel" name="telefono" placeholder="Teléfono" required>
+      <input type="text" name="zip" placeholder="ZIP Code" required>
+      <select name="seguro" required>
+        <option value="">Seleccione el tipo de seguro</option>
+        <option value="salud">Seguro de Salud</option>
+        <option value="termino">Seguro de Vida a Término</option>
+        <option value="entera">Seguro de Vida Entera</option>
+        <option value="gastos">Gastos Finales</option>
+        <option value="iul">IUL</option>
+      </select>
+      <button type="submit">Enviar por WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p><strong>Email:</strong> 
+      <a href="mailto:karensamudioinsurances@hotmail.com">karensamudioinsurances@hotmail.com</a>
+    </p>
+    <p><strong>Teléfono:</strong> 
+      <a href="tel:+13055180208">(305) 518-0208</a>
+    </p>
+    <p><strong>Instagram:</strong> 
+      <a href="https://www.instagram.com/vidaysaludprotegida?igsh=MTJyMHN1amNvOTUweA%3D%3D&utm_source=qr" target="_blank">
+        <i class="fab fa-instagram"></i> @vidaysaludprotegida
+      </a>
+    </p>
+    <p><strong>Facebook:</strong> 
+      <a href="https://www.facebook.com/share/1CRsbNxeKp/?mibextid=wwXIfr" target="_blank">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 To Be Insurance Services | Karen Samudio, Agente de Seguros Licenciada</p>
+    <p>Esta página no es parte de HealthCare.gov ni de ninguna agencia gubernamental.</p>
+    <p>Sígueme en 
+      <a href="https://www.instagram.com/vidaysaludprotegida?igsh=MTJyMHN1amNvOTUweA%3D%3D&utm_source=qr" target="_blank">Instagram</a> 
+      y 
+      <a href="https://www.facebook.com/share/1CRsbNxeKp/?mibextid=wwXIfr" target="_blank">Facebook</a>
+    </p>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/13055180208?text=Hola%20Karen,%20quiero%20más%20información%20sobre%20seguros" 
+     class="whatsapp-float" target="_blank">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+          alt="WhatsApp">
+  </a>
+
+</body>
+</html>
