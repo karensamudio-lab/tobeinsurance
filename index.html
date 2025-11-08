@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="To Be Insurance Services - Seguros de salud, vida, gastos finales e IUL en Estados Unidos. Cotiza gratis con Karen Samudio, agente de seguros licenciada." />
   <title>To Be Insurance Services | Seguros en Estados Unidos</title>
-  <!-- Íconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
   <style>
     :root{
       --brand:#0c3c60;
@@ -23,7 +21,6 @@
     header img{height:60px}
     nav a{color:#fff; text-decoration:none; font-weight:bold; margin:0 10px}
     nav a:hover{text-decoration:underline}
-
     .hero{background:var(--brand); color:#fff; text-align:center; padding:80px 20px}
     .hero h1{font-size:2.2rem; margin:0 0 10px}
     .hero p{margin:0 0 18px}
@@ -31,40 +28,30 @@
     .btn:hover{background:var(--brand-2)}
     .btn.secondary{background:#fff; color:var(--brand)}
     .btn.secondary:hover{background:#e9eef3; color:var(--brand)}
-
+    .btn.market{background:#1d9c59; color:#fff;}
     section{max-width:1100px; margin:0 auto; padding:50px 24px}
     h2{margin:0 0 16px}
-
-    /* Sobre mí */
     #about{display:flex; align-items:center; gap:28px; flex-wrap:wrap}
     #about img{max-width:260px; width:100%; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,.15)}
-
-    /* Tarjetas de servicios */
     .services{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px}
     .service{background:var(--card); border-radius:12px; padding:20px; box-shadow:0 3px 10px rgba(0,0,0,.08)}
     .service h3{margin-top:0}
     .service .summary{margin:8px 0 14px}
     .service-details{display:none; margin-top:14px; background:var(--muted); border-radius:10px; padding:14px}
-
-    /* Formulario */
     form{background:var(--card); border-radius:12px; padding:24px; box-shadow:0 3px 10px rgba(0,0,0,.08)}
     form .row{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px}
     input, select, button{width:100%; padding:12px; margin-top:10px; border-radius:8px; border:1px solid #ccc; font-size:15px}
     button{background:var(--brand); color:#fff; border:none; font-weight:bold; cursor:pointer}
     button:hover{background:var(--brand-2)}
-
+    .btn.market:hover{background:#176e40;}
     footer{background:var(--brand); color:#fff; text-align:center; padding:22px}
     footer a{color:#fff; text-decoration:underline}
-
-    /* WhatsApp flotante */
     .whatsapp-float{position:fixed; right:18px; bottom:18px; width:60px; height:60px; background:#25d366; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(0,0,0,.25); z-index:100}
     .whatsapp-float img{width:34px; height:34px}
     .whatsapp-float:hover{filter:brightness(.95)}
   </style>
 </head>
-
 <body>
-  <!-- Header -->
   <header>
     <img src="logo.PNG" alt="To Be Insurance Services" />
     <nav>
@@ -74,15 +61,11 @@
       <a href="#contact">Contacto</a>
     </nav>
   </header>
-
-  <!-- Hero -->
   <section class="hero">
     <h1>Protege tu futuro con To Be Insurance Services</h1>
     <p>Seguros de salud, vida, gastos finales e IUL en todo Estados Unidos</p>
     <a class="btn secondary" href="#form">Cotiza Gratis</a>
   </section>
-
-  <!-- Sobre mí -->
   <section id="about">
     <img src="foto-karen.JPG" alt="Karen Samudio - Agente de Seguros" />
     <div>
@@ -91,17 +74,13 @@
       <p><strong>Contacto directo:</strong> <a href="mailto:karensamudioinsurances@hotmail.com">karensamudioinsurances@hotmail.com</a> · <a href="tel:+13055180208">(305) 518-0208</a></p>
     </div>
   </section>
-
-  <!-- Servicios -->
   <section id="services">
     <h2>Productos y Servicios</h2>
     <div class="services">
-
-      <!-- Salud -->
       <div class="service">
         <h3>Seguros de Salud</h3>
         <p class="summary">Protección médica con planes de <strong>Obamacare</strong> y <strong>privados</strong> según ingresos y residencia.</p>
-        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('salud')">Más información</a>
+        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('salud')">Conoce más</a>
         <div id="salud" class="service-details">
           <p><strong>¿Qué cubre?</strong> Consultas, hospitalización, urgencias, laboratorio, medicamentos y más (según plan). Con subsidios federales (ACA) puedes reducir la prima mensual.</p>
           <p><strong>Ideal para:</strong> Familias, independientes (1099), emprendedores y nuevos residentes.</p>
@@ -109,12 +88,10 @@
           <a class="btn" target="_blank" href="https://wa.me/13055180208?text=Hola%20Karen,%20quiero%20más%20información%20sobre%20Seguros%20de%20Salud">Quiero este seguro</a>
         </div>
       </div>
-
-      <!-- Vida a Término -->
       <div class="service">
         <h3>Seguro de Vida a Término</h3>
         <p class="summary">Cobertura económica por 10, 20 o 30 años para proteger a tu familia en los años críticos.</p>
-        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('termino')">Más información</a>
+        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('termino')">Conoce más</a>
         <div id="termino" class="service-details">
           <p><strong>¿Para qué sirve?</strong> Sustituir ingresos, cubrir hipoteca, educación de hijos y deudas si faltarás.</p>
           <p><strong>Ventajas:</strong> Prima baja por alta cobertura. Opciones con convertibilidad a vida permanente.</p>
@@ -122,49 +99,45 @@
           <a class="btn" target="_blank" href="https://wa.me/13055180208?text=Hola%20Karen,%20quiero%20más%20información%20sobre%20Seguro%20de%20Vida%20a%20Término">Quiero este seguro</a>
         </div>
       </div>
-
-      <!-- Vida Entera -->
       <div class="service">
         <h3>Seguro de Vida Entera</h3>
         <p class="summary">Protección de por vida con <strong>valor en efectivo</strong> que crece garantizado.</p>
-        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('entera')">Más información</a>
+        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('entera')">Conoce más</a>
         <div id="entera" class="service-details">
           <p><strong>¿Qué lo hace único?</strong> La póliza nunca vence mientras pagues. Genera ahorro (cash value) que puedes usar en vida como préstamo.</p>
           <p><strong>Ideal para:</strong> Planificación de herencia, estrategias a largo plazo y estabilidad de primas.</p>
           <a class="btn" target="_blank" href="https://wa.me/13055180208?text=Hola%20Karen,%20quiero%20más%20información%20sobre%20Seguro%20de%20Vida%20Entera">Quiero este seguro</a>
         </div>
       </div>
-
-      <!-- Gastos Finales -->
       <div class="service">
         <h3>Gastos Finales</h3>
         <p class="summary">Plan accesible para cubrir servicios funerarios y trámites sin dejar cargas a la familia.</p>
-        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('gastos')">Más información</a>
+        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('gastos')">Conoce más</a>
         <div id="gastos" class="service-details">
           <p><strong>¿Qué cubre?</strong> Funeral/cremación, deudas médicas y costos finales. Requisitos médicos simples; emisión rápida.</p>
           <p><strong>Ideal para:</strong> Mayores de 50, personas con condiciones controladas que buscan tranquilidad inmediata.</p>
           <a class="btn" target="_blank" href="https://wa.me/13055180208?text=Hola%20Karen,%20quiero%20más%20información%20sobre%20Seguro%20de%20Gastos%20Finales">Quiero este seguro</a>
         </div>
       </div>
-
-      <!-- IUL -->
       <div class="service">
         <h3>IUL (Index Universal Life)</h3>
         <p class="summary">Seguro de vida con <strong>acumulación</strong> ligada a índices. Útil para jubilación y metas grandes.</p>
-        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('iul')">Más información</a>
+        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('iul')">Conoce más</a>
         <div id="iul" class="service-details">
           <p><strong>¿Cómo funciona?</strong> El cash value crece según un índice (p.ej., S&P 500) con <em>cap/floor</em>. Retiros potencialmente libres de impuestos mediante préstamos de póliza.</p>
           <p><strong>Ideal para:</strong> Personas que desean protección + estrategia de ahorro fiscalmente eficiente.</p>
           <a class="btn" target="_blank" href="https://wa.me/13055180208?text=Hola%20Karen,%20quiero%20más%20información%20sobre%20IUL">Quiero este seguro</a>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- Formulario -->
+  <!-- BOTÓN MERCADO DE SALUD -->
   <section id="form">
     <h2>Solicita tu Cotización</h2>
+    <a class="btn market" target="_blank" href="https://www.healthsherpa.com/?_agent_id=karen-samudio&ljs=es-MX" style="margin-bottom:18px;display:inline-block;">
+      Consulta en el Mercado de Salud
+    </a>
     <form onsubmit="return sendWhatsApp(event)">
       <div class="row">
         <input type="text" name="nombre" placeholder="Nombre completo" required />
@@ -184,34 +157,30 @@
     </form>
   </section>
 
-  <!-- Contacto -->
   <section id="contact">
     <h2>Contacto</h2>
-    <p><strong>Email:</strong> <a href="mailto:karensamudioinsurances@hotmail.com">karensamudioinsurances@hotmail.com</a></p>
-    <p><strong>Teléfono:</strong> <a href="tel:+13055180208">(305) 518-0208</a></p>
+    <form id="contact-form">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
+      <input type="tel" name="telefono" placeholder="Teléfono" required>
+      <input type="text" name="zip" placeholder="ZIP Code" required>
+      <button type="submit">Enviar</button>
+    </form>
     <p><strong>Instagram:</strong> <a href="https://www.instagram.com/vidaysaludprotegida" target="_blank"><i class="fab fa-instagram"></i> @vidaysaludprotegida</a></p>
     <p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/1CRsbNxeKp/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></p>
   </section>
-
-  <!-- Footer -->
   <footer>
     <p>© 2025 To Be Insurance Services | Karen Samudio, Agente de Seguros Licenciada</p>
     <p>Esta página no es parte de HealthCare.gov ni de ninguna agencia gubernamental.</p>
   </footer>
-
-  <!-- Botón flotante WhatsApp -->
   <a class="whatsapp-float" target="_blank" href="https://wa.me/13055180208?text=Hola%20Karen,%20quiero%20más%20información%20sobre%20seguros">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
   </a>
-
   <script>
-    // Mostrar/ocultar detalles de cada producto
     function toggleDetails(id){
       var el = document.getElementById(id);
       el.style.display = (el.style.display === "block") ? "none" : "block";
     }
-
-    // Construir mensaje y abrir WhatsApp con los datos del formulario
     function sendWhatsApp(e){
       e.preventDefault();
       const f = e.target;
@@ -220,14 +189,12 @@
       const telefono = f.telefono.value.trim();
       const zip = f.zip.value.trim();
       const seguro = f.seguro.value;
-
       const mensaje = `Hola Karen, quiero una cotización.%0A` +
                       `Nombre: ${encodeURIComponent(nombre)}%0A` +
                       `Correo: ${encodeURIComponent(correo)}%0A` +
                       `Teléfono: ${encodeURIComponent(telefono)}%0A` +
                       `ZIP: ${encodeURIComponent(zip)}%0A` +
                       `Interés: ${encodeURIComponent(seguro)}`;
-
       const url = `https://wa.me/13055180208?text=${mensaje}`;
       window.open(url, '_blank');
       return false;
